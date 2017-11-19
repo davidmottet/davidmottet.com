@@ -1,0 +1,22 @@
+{
+  "name": "davidmottet.com",
+  "version": "1.0.0",
+  "description": "\"# davidmottet.com\" \r \"# davidmottet.com\"  git init",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidmottet/davidmottet.com.git"
+  },
+  "author": "David MOTTET",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidmottet/davidmottet.com/issues"
+  },
+  "homepage": "https://github.com/davidmottet/davidmottet.com#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
