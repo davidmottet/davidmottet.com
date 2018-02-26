@@ -4,6 +4,8 @@
   "description": "my website",
   "main": "app.js",
   "scripts": {
+    "prod": "node app.js",
+    "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +19,9 @@
   },
   "homepage": "https://github.com/davidmottet/davidmottet.com#readme",
   "dependencies": {
-    "express": "^4.16.2"
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "helmet": "^3.11.0"
   }
 }
