@@ -1,2 +1,1 @@
-"# davidmottet.com" 
-"# davidmottet.com"  git init 
+# My website
