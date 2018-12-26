@@ -2,14 +2,21 @@ const express = require('express')
 const helmet = require('helmet')
 const cookieParser = require('cookie-parser')
 const expressSession = require('express-session')
+const privateKey  = fs.readFileSync('sslcert/host.key', 'utf8');
+const certificate = fs.readFileSync('sslcert/host.crt', 'utf8');
+
+const credentials = {key: privateKey, cert: certificate};
+
+const https = require('https');
+const http = require('http');
 
 const app = express()
 const log = console.log
-const port = 8080
 
 app.use(helmet())
 app.use(cookieParser())
 
 app.use(express.static('client'))
 
-app.listen(port, () => console.log(`App listening on port ${port}!`))
+http.createServer(app).listen(8080)
+https.createServer(credentials, app).listen(8443)
