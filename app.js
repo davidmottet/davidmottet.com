@@ -4,6 +4,7 @@ const cookieParser = require('cookie-parser')
 const expressSession = require('express-session')
 
 const app = express()
+const log = console.log
 
 app.use(helmet())
 app.use(cookieParser())
@@ -24,5 +25,5 @@ app.get('/', function (req, res) {
 })
 
 app.listen(8080, function () {
-	console.log('site listening on port 8080!')
+	log("site listening on port 8080!")
 })
