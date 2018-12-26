@@ -8,6 +8,6 @@ RUN npm i
 
 COPY . .
 
-CMD node app.js
+CMD node index.js
 
 EXPOSE 80
